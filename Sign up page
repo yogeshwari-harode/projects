@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sign up page</title>
+	<style>
+		body{
+			background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR7ZTdEm7tt-cWVsAg1AQwELlA9CWqwB5jEpQ&usqp=CAU");
+			background-repeat:no-repeat;
+            background-size:cover;
+            background-attachment: fixed;
+		}
+		.a{
+			font-family:Arial;
+		}
+		.head{
+			background-color:#5D64C8;
+			color:white;
+			padding: 12px;
+			font-family: Arial;
+			font-size: 13px;
+		}
+		
+	.text{
+		font-family: Arial;
+		border-radius:7px;
+		padding:8px ;
+		margin:3px;
+		width:300px;
+	}
+	label{
+		color:black;
+		font-family: Arial;
+	}
+	form{
+		background-color: white;
+		/*   background-image: linear-gradient(45deg, red,orange,blue,gray);  */
+		width:400px;
+		height:550px;
+		border-radius:7px;
+		margin-top: 50px;
+	}
+	
+	.button{
+		width:80%;
+		padding: 7px;
+		margin: 10px;
+		color:white; 
+		background-color:#262E9C;
+		border-color: black;
+		border-radius: 5px;
+		border-width: 1.5px;
+	}
+
+	.content{
+		font-size: 13px;
+	}
+	.content a{
+		text-decoration: none;
+		color:#141FC0 ;
+	}
+
+	</style>
+</head>
+<body>
+	
+<div align="center">
+	<form class="a" >
+
+	<div class="head">	
+		<b>Welcome to our project</b>
+		<center>Manage your workflow</center>
+	</div>
+	<br>
+	<center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT83kTMBrcvihOlmJULN0usunvbpQHiVusv6Q&usqp=CAU" height="120px"></center>
+<br>
+
+<div style="margin-left: 10px">
+<label>User name</label></div>
+<br>
+<input  class="text" type="text" placeholder="Your name" required><br>
+
+<label for="email">Email</label><br>
+<input class="text" id="email" type="Email" placeholder="Email" required><br>
+
+<label>Password</label><br>
+<input class="text" type="Password" placeholder="Password" required><br>
+
+
+<button type="submit"  value="submit" class="button">	
+Create account
+</button>
+<br>
+
+<p class="content">
+<input  type="checkbox" >
+		
+	<label>I agree to be bound by the project <a href="">server terms</a><br>See our <a href="">privacy policy</a> for more information</label>
+</p>
+
+</form>
+</div>
+</p>
+
+</body>
+</html>
