@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login form</title>
+	<style>
+		body{
+			background-image:linear-gradient(black,green,black);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+		.a{
+			font-family: Arial;
+
+		}
+
+		.box input{
+		font-family: Arial;
+		border-radius:5px;
+		padding: 10px;
+		margin:10px;
+		background-color: #F2F3F4;
+		width: 300px;
+		height: 30px;
+	}
+	
+	
+	form{
+		width:450px;
+		height:550px;
+		margin-top: 5%;
+		border: solid black;
+		border-radius:5px;
+		background-color: white;
+	}
+	button{
+		width:310px;
+		height: 50px;
+		padding: 6px;
+		margin:2px;
+		border-radius:27px;
+		margin-top: 10px;
+		background-color:#0D47A1;
+        color:white;
+        font-size: 20px;
+	}
+	button a{
+		text-decoration: none;
+		color:white;
+	}
+ input{
+margin-top: 10px;
+margin-bottom: 10px;
+
+}
+
+.btn-google {
+	font-size: 18px;
+  color: white;
+  background-color: #ea4335;
+}
+
+.btn-google:hover{
+color:black;
+}
+
+.btn-facebook {
+  color: white;
+  font-size: 18px;
+  background-color: #3b5998;
+}
+.btn-facebook:hover{
+color:black;
+}
+
+	</style>
+
+</head>
+<body>
+
+
+<center>
+ <form class="a">
+	<h1>Login</h1>
+
+	<div class="box">
+		<input type="text" placeholder="User Name"required><br>
+
+		<input  id="Email" type="Email"placeholder="Email address"required><label for="Email" ></label><br>
+
+		<input type="password" placeholder="Password"required><br>
+
+	</div>
+
+	<div class="checkbox">
+			<input type="checkbox"  id="Remember password" ></input>
+			<label for="Remember password">Remember password</label>
+	</div>
+
+	<div class="box">
+		<button type="submit" value="submit">submit</button>
+	</div>
+
+		<hr width="350px" style="color:dimgray">
+		<button class="btn-google" type="submit"> <b>SIGN IN WITH GOOGLE</b>
+		</button>
+
+
+ 		<button class="btn-facebook" type="submit"><b>SIGN IN WITH FACEBOOK</b></button>
+
+ </form>
+</center>
+
+</body>
+</html>
