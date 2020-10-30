@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		h1 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.head,
+.left_antenna,
+.right_antenna,
+.torso,
+.left_arm,
+.right_arm,
+.left_leg,
+.right_leg {
+	background-color: #a7c63d;
+}
+
+.head {
+	width: 200px;
+	margin: 50px auto;
+	height: 00px;
+	border-r1adius: 200px 200px 0 0;
+	margin-bottom: 10px;
+}
+
+.antennas {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.left_antenna {
+	width: 60px;
+	height: 6px;
+	transform: rotate(60deg);
+	border-radius: 100px 0px 0px 100px;
+}
+
+.right_antenna {
+	width: 60px;
+	height: 6px;
+	transform: rotate(-60deg);
+	border-radius: 0px 100px 100px 0px;
+}
+
+.eyes {
+	display: flex;
+}
+
+.left_eye,
+.right_eye {
+	width: 20px;
+	height: 20px;
+	border-radius: 15px;
+	background-color: white;
+	margin-top: -60px;
+}
+
+.upper_body {
+	width: 300px;
+	height: 150px;
+	display: flex;
+	margin: 0px auto;
+}
+
+.left_arm,
+.right_arm {
+	width: 40px;
+	height: 125px;
+	border-radius: 100px;
+}
+
+
+
+.left_arm {
+	margin-right: 10px;
+	animation: danceLeftArm 1s infinite alternate;
+}
+
+.right_arm {
+	margin-left: 10px;
+	animation: danceRightArm 1s infinite alternate;
+}
+
+.torso {
+	width: 200px;
+	height: 200px;
+	border-radius: 0 0 50px 50px;
+}
+
+.lower_body {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	display: flex;
+
+}
+
+.left_leg,
+.right_leg {
+	width: 40px;
+	height: 120px;
+	border-radius: 0 0 100px 100px;
+}
+
+.left_leg {
+	margin-left: 45px;
+}
+
+.right_leg {
+	margin-left: 30px;
+	animation: danceRightLeg 1s infinite alternate;
+}
+
+
+.left_eye {
+	position: relative;
+	top: 100px;
+	left: 40px;
+}
+
+.right_eye {
+	position: relative;
+	top: 100px;
+	left: 120px;
+}
+
+@keyframes danceLeftArm {
+	100% {
+		transform: translate(-13px, 0) rotate(25deg);
+	}
+}
+
+@keyframes danceRightArm {
+	100% {
+		transform: rotate(-150deg) translate(15px, 15px);
+		transform-origin: 50% 20%;
+	}
+}
+
+@keyframes danceRightLeg {
+	100% {
+		transform: translate(20px, 0px) rotate(-25deg);
+	}
+} 
+	</style>
+	<title>CSS Practice</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+	<h1>Android Robot Dancing</h1>
+	<div class="robots">
+		<div class="android"> 
+			<div class="head"> 
+				<div class="antennas">
+					<div class="left_antenna"></div>
+					<div class="right_antenna"></div>
+				</div>
+
+				<div class="eyes"> 
+					<div class="left_eye"></div> 
+					<div class="right_eye"></div>
+				</div> 
+			</div> 
+			<div class="upper_body"> 
+				<div class="left_arm"></div> 
+				<div class="torso"></div> 
+				<div class="right_arm"></div> 
+			</div> 
+			<div class="lower_body"> 
+				<div class="left_leg"></div> 
+				<div class="right_leg"></div> 
+			</div> 
+		</div>
+	</div>
+</body>
+</html> 
